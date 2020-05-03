@@ -1,0 +1,30 @@
+import React,{useState} from 'react'
+
+const GrandChild = props => {
+    return(<Child brand={props.brand}/>
+  )
+}
+
+const Child = props => {
+    return(
+      <h1>Brand: {props.brand}</h1>
+    )
+}
+
+const App = () =>{
+  const [brandname] = useState('Amazon')
+  return(
+    <div>
+      <h1>Hello</h1>
+      <GrandChild brand={brandname} />
+    </div>
+  )
+}
+
+export default App
+
+
+/* In above example we have passed props from GrandChild 
+where in it is passed to Child from App. Instead of passing this props everywhere
+We can make use of context API to access this props everywhere. This would
+get complex when we have to call alot of components.*/

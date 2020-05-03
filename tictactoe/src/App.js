@@ -64,6 +64,7 @@ const App = () => {
       setisCross(!isCross)
     }else{
       reloadGame()
+      
       return toast("already filled ", {type: "error"})
     }
 
