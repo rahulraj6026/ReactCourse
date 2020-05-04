@@ -17,7 +17,6 @@ const TodoForm  = () => {
 
     //add a todo when we click on handlesubmit
     const handleSubmit = e => {
-        e.preventDefault()
         if(todoString === ""){
             alert("test")
             // toast.info("Please Enter a Todo !", {
