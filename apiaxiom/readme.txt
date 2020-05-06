@@ -1,0 +1,1 @@
+Created a App using Axiom to get API response in JSON format and then fetch the required data and display it using react components.
