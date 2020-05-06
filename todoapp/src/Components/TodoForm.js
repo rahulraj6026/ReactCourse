@@ -10,18 +10,21 @@ import {
 import { v4 as uuidv4 } from 'uuid';
 import {todoContext} from "../Context/todoContext"
 import {ADD_TODO} from "../Context/action.types"
+import { toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 
+toast.configure()
 const TodoForm  = () => {
     const [todoString, settodoString] = useState("")
     const {dispatch} = useContext(todoContext)
 
     //add a todo when we click on handlesubmit
-    const handleSubmit = e => {
+    const handleSubmit = (e) => {
+        e.preventDefault()
         if(todoString === ""){
-            alert("test")
-            // toast.info("Please Enter a Todo !", {
-            //     position: toast.POSITION.BOTTOM_CENTER
-            // });
+            toast.info("Please Enter a Todo !", {
+                position: toast.POSITION.BOTTOM_CENTER
+            });
         }
         else{
             //create a todo with the string entered and a unique id
@@ -38,8 +41,12 @@ const TodoForm  = () => {
                 payload: todo
             })
 
+            toast.success("Successfully Added", {
+                position: toast.POSITION.BOTTOM_CENTER
+            });
+
             //set the updated string
-            settodoString()
+            settodoString("")
             }
     }
     return(
