@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { commerce, random } from 'faker'
 import CardItem from "./CartItem"
 
-const apiKey = "563492ad6f9170000100000166d35e25f16c499488bedc6bf81c6b66"
+const apiKey = ""
 
 const url = "https://api.pexels.com/v1/search?query=laptop&per_page=6&page=1"
 

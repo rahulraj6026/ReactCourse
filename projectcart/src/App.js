@@ -31,7 +31,7 @@ function App() {
     toast("Purchase Completed",{
       type: "success"
     })
-    setcartItem([])    
+    setcartItem([])
   }
 
   //Method to remove selected item from the cart
