@@ -15,10 +15,12 @@ import {
 const Cart = ({ cartItem, removeItem, buyNow }) => {
   let amount = 0;
 
+  //calculate the total amount
   cartItem.forEach(item => {
     amount = parseFloat(amount) + parseFloat(item.productPrice);
   });
 
+  //design for side panel
   return (
     <Container fluid>
       <h1 className="text-success">Your Cart</h1>
