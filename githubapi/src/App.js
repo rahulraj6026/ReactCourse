@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import {BrowserRouter as Router, Switch, Link, Route} from 'react-router-dom'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import { ToastContainer} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.min.css'
 //firebase

@@ -15,7 +15,6 @@ import {
 } from 'reactstrap'
 import firebase from 'firebase/app'
 import {UserContext} from '../Context/UserCotext'
-import { Redirect } from 'react-router-dom'
 import { toast } from 'react-toastify'
 
 const Signin = () => {
